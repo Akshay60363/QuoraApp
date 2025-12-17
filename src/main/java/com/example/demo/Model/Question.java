@@ -29,6 +29,7 @@ public class Question {
 	@NotBlank(message = "Content is mandatory")
 	@Size(min = 20, message = "Content must be at least 20 characters long")
 	private String content;
+	private Integer views;
 	@CreatedDate
 	private LocalDateTime createdAt;
 	@LastModifiedDate
